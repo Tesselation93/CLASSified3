@@ -8,7 +8,6 @@ class Teacher {
 
   //  In the Teacher class, add a constructor that takes in 3 parameters with the names "tmpName", "tmpAge", "tmpIsFemale" with the same datatypes used in 3.f
 
-
   Teacher(String tmpName, int tmpAge, boolean tmpIsFemale) {
 
     name = tmpName;
