@@ -3,17 +3,20 @@
 
 void setup(){
   
-  Teacher teacher1 = new Teacher("Tine Marbjerg", 40, true);
+  Teacher teacher = new Teacher("Tine Marbjerg", 40, true);
   
   Student student1 = new Student("Tess", 31, true, " Datanatiker F25");
   
   Student student2 = new Student("Olivia", 23, true, " Datanatiker F25");
   
-  println(teacher1.name);
+  println(teacher.name);
 
   println(student1.name + ":" + student1.datamatikerTeam);
   
   println(student2.name + ":" + student2.datamatikerTeam);
- 
-}
- 
+
+  teacher.changeName("Buttercup");
+  
+  println("New powerpuff name for teacher: " + teacher.name);
+    
+    }
