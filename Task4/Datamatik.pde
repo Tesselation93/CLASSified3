@@ -3,22 +3,35 @@
 
 void setup(){
   
+  // New instances
+  
   Teacher teacher = new Teacher("Tine Marbjerg", 40, true);
   
-  Student student1 = new Student("Tess", 31, true, " Datanatiker F25");
+  Student student1 = new Student("Tess ", 31, true, "Datamatiker F25");
   
-  Student student2 = new Student("Olivia", 23, true, " Datanatiker F25");
+  Student student2 = new Student("Olivia ", 23, true, "Datamatiker F25");
   
   println(teacher.name);
 
-  println(student1.name + ":" + student1.datamatikerTeam);
+  println(student1.name + ": " + student1.datamatikerTeam);
   
-  println(student2.name + ":" + student2.datamatikerTeam);
+  println(student2.name + ": " + student2.datamatikerTeam);
+  
+  // changeName built in variable 
     
   teacher.changeName("Buttercup");
   
   println("New powerpuff name for teacher: " + teacher.name);
-    
-    }
+      println("Are " + student1.name +  "and " +  student2.name +  "on the same team? " + isClassmate(student1, student2));
+}
+
+// Comparing with boolean 
+
+boolean isClassmate(Student student1, Student student2) {
+
+  return student1.datamatikerTeam == student2.datamatikerTeam;
+  
+}
+
 
  
